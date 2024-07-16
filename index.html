@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./scss/app.min.css" />
-    <title>Document</title>
+    <title>Получите кредит под залог недвижимости</title>
   </head>
   <body>
     <!-- Header -->
@@ -29,6 +31,336 @@
       </div>
     </header>
 
-    <section class="intro"></section>
+    <section class="intro" id="intro">
+      <div class="container">
+        <div class="intro__text">
+          <div class="intro__text-title">
+            Получите кредит <br /><strong>под залог недвижимости</strong>
+          </div>
+          <div class="intro__text-subtitle">за 2 часа по ставке от 5,9%</div>
+          <div class="intro__text-subtitle">без справок и поручителей</div>
+
+          <div class="intro__list">
+            <div class="intro__list-item">
+              <img src="images/first-block-list-1.png" />
+              <p>Кредитная история <br /><strong>не имеет значения</strong></p>
+            </div>
+            <div class="intro__list-item">
+              <img src="images/first-block-list-2.png" />
+              <p>
+                <strong>Вы остаетесь собственником,</strong> <br />не нужно
+                никого выписывать
+              </p>
+            </div>
+            <div class="intro__list-item">
+              <img src="images/first-block-list-3.png" />
+              <p>Оформление <br />по <strong>2 документам</strong></p>
+            </div>
+            <div class="intro__list-item">
+              <img src="images/first-block-list-4.png" />
+              <p>
+                Выдаем всю сумму <br />на руки <strong>в день обращения</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="intro__form">
+          <img class="image-1" src="images/first-form-1.svg" />
+          <img class="image-2" src="images/first-form-2.svg" />
+          <img class="image-3" src="images/first-form-3.svg" />
+          <img class="image-4" src="images/first-form-4.svg" />
+
+          <div class="intro__form-content">
+            <div class="intro__form-title">
+              Оставьте заявку <br />и
+              <strong>получите одобрение уже через 30 минут</strong>
+            </div>
+            <form action="" method="post">
+              <input
+                type="hidden"
+                name="title"
+                value="Заявка на одобрение через 30 минут"
+              />
+              <input
+                type="text"
+                name="name"
+                class="mask_text"
+                placeholder="Как вас зовут*"
+                required=""
+                autocomplete="off"
+              />
+              <input
+                type="text"
+                name="phone"
+                class="mask_phone"
+                placeholder="Ваш телефон*"
+                required=""
+                autocomplete="off"
+              />
+              <button type="submit" class="btn-main">Получить одобрение</button>
+              <div class="intro__form-info">
+                Нажимая на кнопку, вы даете согласие <br />на обработку своих
+                персональных данных <br />и соглашаетесь с
+                <a href="/politika.pdf" target="_blank">
+                  Политикой конфиденциальности
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="se"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var textInputs = document.querySelectorAll(".mask_text");
+
+        textInputs.forEach(function (input) {
+          input.addEventListener("keydown", function (event) {
+            var k = event.key;
+            var allowedKeys = [
+              "а",
+              "б",
+              "в",
+              "г",
+              "д",
+              "е",
+              "ё",
+              "ж",
+              "з",
+              "и",
+              "й",
+              "к",
+              "л",
+              "м",
+              "н",
+              "о",
+              "п",
+              "р",
+              "с",
+              "т",
+              "у",
+              "ф",
+              "х",
+              "ц",
+              "ч",
+              "ш",
+              "щ",
+              "ъ",
+              "ы",
+              "ь",
+              "э",
+              "ю",
+              "я",
+
+              "А",
+              "Б",
+              "В",
+              "Г",
+              "Д",
+              "Е",
+              "Ё",
+              "Ж",
+              "З",
+              "И",
+              "Й",
+              "К",
+              "Л",
+              "М",
+              "Н",
+              "О",
+              "П",
+              "Р",
+              "С",
+              "Т",
+              "У",
+              "Ф",
+              "Х",
+              "Ц",
+              "Ч",
+              "Ш",
+              "Щ",
+              "Ъ",
+              "Ы",
+              "Ь",
+              "Э",
+              "Ю",
+              "Я",
+
+              "a",
+              "b",
+              "c",
+              "d",
+              "e",
+              "f",
+              "g",
+              "h",
+              "i",
+              "j",
+              "k",
+              "l",
+              "m",
+              "n",
+              "o",
+              "p",
+              "q",
+              "r",
+              "s",
+              "t",
+              "u",
+              "v",
+              "w",
+              "x",
+              "y",
+              "z",
+
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K",
+              "L",
+              "M",
+              "N",
+              "O",
+              "P",
+              "Q",
+              "R",
+              "S",
+              "T",
+              "U",
+              "V",
+              "W",
+              "X",
+              "Y",
+              "Z",
+
+              " ",
+              "Alt",
+              "Backspace",
+              "Shift",
+              "Control",
+              "Tab",
+              "ArrowLeft",
+              "ArrowRight",
+            ];
+
+            if (!allowedKeys.includes(k)) {
+              event.preventDefault();
+            }
+          });
+        });
+
+        [].forEach.call(
+          document.querySelectorAll(".mask_phone"),
+          function (input) {
+            var keyCode;
+            function mask(event) {
+              event.keyCode && (keyCode = event.keyCode);
+              var pos = this.selectionStart;
+              if (pos < 3) event.preventDefault();
+              var matrix = "+7 (___) ___ ____",
+                i = 0,
+                def = matrix.replace(/\D/g, ""),
+                val = this.value.replace(/\D/g, ""),
+                new_value = matrix.replace(/[_\d]/g, function (a) {
+                  return i < val.length ? val.charAt(i++) : a;
+                });
+              i = new_value.indexOf("_");
+              if (i != -1) {
+                i < 5 && (i = 3);
+                new_value = new_value.slice(0, i);
+              }
+              var reg = matrix
+                .substr(0, this.value.length)
+                .replace(/_+/g, function (a) {
+                  return "\\d{1," + a.length + "}";
+                })
+                .replace(/[+()]/g, "\\$&");
+              reg = new RegExp("^" + reg + "$");
+              if (
+                !reg.test(this.value) ||
+                this.value.length < 5 ||
+                (keyCode > 47 && keyCode < 58)
+              ) {
+                this.value = new_value;
+              }
+              if (event.type == "blur" && this.value.length < 5) {
+                this.value = "";
+              }
+            }
+
+            input.addEventListener("input", mask, false);
+            input.addEventListener("focus", mask, false);
+            input.addEventListener("blur", mask, false);
+            input.addEventListener("keydown", mask, false);
+          }
+        );
+      });
+
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var phoneInput = this.querySelector("input[name='phone']");
+          var phone = phoneInput.value;
+
+          if (String(phone)[4] != "9") {
+            phoneInput.value = "";
+            phoneInput.focus();
+            return;
+          }
+
+          var formData = new FormData(this);
+          var msg = new URLSearchParams(formData).toString();
+          var utmData = new FormData(document.getElementById("utm_form"));
+          var utm = new URLSearchParams(utmData).toString();
+
+          if (phone) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/lead.php", true);
+            xhr.setRequestHeader(
+              "Content-Type",
+              "application/x-www-form-urlencoded; charset=UTF-8"
+            );
+            xhr.onload = function () {
+              if (xhr.status === 200) {
+                var textInputs = document.querySelectorAll("input[type=text]");
+                var submitInputs = document.querySelectorAll(
+                  "form input[type=submit]"
+                );
+                var buttons = document.querySelectorAll("form button");
+                textInputs.forEach(function (input) {
+                  input.disabled = true;
+                });
+                submitInputs.forEach(function (input) {
+                  input.disabled = true;
+                });
+                buttons.forEach(function (button) {
+                  button.disabled = true;
+                });
+              } else {
+                console.log("Ошибка формы: " + xhr.status);
+              }
+            };
+            xhr.send(msg + "&" + utm);
+
+            var formInputs = this.querySelectorAll("input");
+            formInputs.forEach(function (input) {
+              input.disabled = true;
+            });
+          }
+        });
+    </script>
   </body>
 </html>

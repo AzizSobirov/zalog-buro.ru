@@ -171,7 +171,232 @@
   }
 }
 
+// Intro
 .intro {
+  position: relative;
+  padding: 190px 0 105px;
+
+  .container {
+    @include flex-row(space-between, center, 44px);
+  }
+
+  &__text {
+    margin-top: -40px;
+    width: 100%;
+    max-width: 780px;
+    @include flex-col(flex-start, center);
+
+    &-title {
+      margin: 0 0 16px;
+      font-size: 48px;
+      line-height: 57px;
+
+      @media only screen and (max-width: 1189px) {
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 767px) {
+        font-size: 32px;
+        line-height: 38px;
+      }
+    }
+
+    &-subtitle {
+      width: 350px;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 50px;
+      text-align: center;
+      color: #f8b917;
+      background-image: url(../images/first-block-text-bg.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:nth-child(2) {
+        margin-left: 24px;
+      }
+      &:nth-child(3) {
+        margin-top: -1px;
+        margin-left: 55px;
+        margin-bottom: 22px;
+      }
+
+      @media only screen and (max-width: 1189px) {
+        &:nth-child(2) {
+          margin-left: 164px;
+        }
+        &:nth-child(3) {
+          margin-left: 194px;
+        }
+      }
+
+      @media only screen and (max-width: 767px) {
+        position: relative;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        font-size: 14px;
+        line-height: 42px;
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          width: 280px;
+          background-size: 280px;
+        }
+
+        &:nth-child(2) {
+          left: -6px;
+        }
+
+        &:nth-child(3) {
+          left: 9px;
+          margin-top: -2px;
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  &__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 315px 400px;
+    gap: 20px;
+
+    &-item {
+      position: relative;
+      padding: 26px 20px 26px 120px;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      background: #ffffff;
+      box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
+      @include flex-row(flex-start, center, 15px);
+
+      img {
+        position: absolute;
+        left: 8px;
+        width: auto;
+      }
+
+      strong {
+        font-weight: 500;
+      }
+
+      &:nth-child(1) img {
+        height: 105px;
+      }
+
+      &:nth-child(2) img {
+        left: 20px;
+        height: 74px;
+      }
+
+      &:nth-child(3) img {
+        left: 25px;
+        height: 71px;
+      }
+
+      &:nth-child(4) img {
+        height: 76px;
+      }
+    }
+  }
+
+  &__form {
+    position: relative;
+    margin-top: 10px;
+    padding: 42px 45px 45px;
+    background: #ffffff;
+    box-shadow: 10px 15px 50px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+
+    &::before {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      content: "";
+      border: 1px solid #f4f4f4;
+      border-radius: 5px;
+    }
+
+    .image-1 {
+      position: absolute;
+      top: 150px;
+      left: 485px;
+    }
+
+    .image-2 {
+      position: absolute;
+      top: -10px;
+      left: 355px;
+      z-index: 6;
+    }
+
+    .image-3 {
+      position: absolute;
+      top: 10px;
+      left: -115px;
+    }
+
+    .image-4 {
+      position: absolute;
+      top: 20px;
+      left: -70px;
+      max-width: 530px;
+      z-index: -2;
+    }
+
+    &-content {
+      position: relative;
+      width: 100%;
+      z-index: 2;
+    }
+
+    &-title {
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+
+      strong {
+        font-weight: 500;
+      }
+    }
+
+    input {
+      margin-bottom: 14px;
+    }
+
+    button {
+      padding: 30px 10px;
+      width: 100%;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    &-info {
+      margin-top: 20px;
+      margin-left: -15px;
+      margin-right: -15px;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+
+      a {
+        font-weight: 500;
+        text-decoration: underline;
+        color: #f8b917;
+      }
+    }
+  }
+}
+
+.se {
   min-height: 200vh;
-  background: #eee;
 }
