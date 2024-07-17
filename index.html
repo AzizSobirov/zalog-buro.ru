@@ -31,336 +31,185 @@
       </div>
     </header>
 
-    <section class="intro" id="intro">
-      <div class="container">
-        <div class="intro__text">
-          <div class="intro__text-title">
-            Получите кредит <br /><strong>под залог недвижимости</strong>
-          </div>
-          <div class="intro__text-subtitle">за 2 часа по ставке от 5,9%</div>
-          <div class="intro__text-subtitle">без справок и поручителей</div>
+    <main>
+      <!-- Intro -->
+      <section class="intro" id="intro">
+        <div class="container">
+          <div class="intro__text">
+            <div class="intro__text-title">
+              Получите кредит <br /><strong>под залог недвижимости</strong>
+            </div>
+            <div class="intro__text-subtitle">за 2 часа по ставке от 5,9%</div>
+            <div class="intro__text-subtitle">без справок и поручителей</div>
 
-          <div class="intro__list">
-            <div class="intro__list-item">
-              <img src="images/first-block-list-1.png" />
-              <p>Кредитная история <br /><strong>не имеет значения</strong></p>
+            <div class="intro__list">
+              <div class="intro__list-item">
+                <img src="images/first-block-list-1.png" />
+                <p>
+                  Кредитная история <br /><strong>не имеет значения</strong>
+                </p>
+              </div>
+              <div class="intro__list-item">
+                <img src="images/first-block-list-2.png" />
+                <p>
+                  <strong>Вы остаетесь собственником,</strong> <br />не нужно
+                  никого выписывать
+                </p>
+              </div>
+              <div class="intro__list-item">
+                <img src="images/first-block-list-3.png" />
+                <p>Оформление <br />по <strong>2 документам</strong></p>
+              </div>
+              <div class="intro__list-item">
+                <img src="images/first-block-list-4.png" />
+                <p>
+                  Выдаем всю сумму <br />на руки
+                  <strong>в день обращения</strong>
+                </p>
+              </div>
             </div>
-            <div class="intro__list-item">
-              <img src="images/first-block-list-2.png" />
-              <p>
-                <strong>Вы остаетесь собственником,</strong> <br />не нужно
-                никого выписывать
-              </p>
-            </div>
-            <div class="intro__list-item">
-              <img src="images/first-block-list-3.png" />
-              <p>Оформление <br />по <strong>2 документам</strong></p>
-            </div>
-            <div class="intro__list-item">
-              <img src="images/first-block-list-4.png" />
-              <p>
-                Выдаем всю сумму <br />на руки <strong>в день обращения</strong>
-              </p>
+          </div>
+
+          <div class="intro__form">
+            <img class="image-1" src="images/first-form-1.svg" />
+            <img class="image-2" src="images/first-form-2.svg" />
+            <img class="image-3" src="images/first-form-3.svg" />
+            <img class="image-4" src="images/first-form-4.svg" />
+
+            <div class="intro__form-content">
+              <div class="intro__form-title">
+                Оставьте заявку <br />и
+                <strong>получите одобрение уже через 30 минут</strong>
+              </div>
+              <form action="" method="post">
+                <input
+                  type="hidden"
+                  name="title"
+                  value="Заявка на одобрение через 30 минут"
+                />
+                <input
+                  type="text"
+                  name="name"
+                  class="mask_text"
+                  placeholder="Как вас зовут*"
+                  required=""
+                  autocomplete="off"
+                />
+                <input
+                  type="text"
+                  name="phone"
+                  class="mask_phone"
+                  placeholder="Ваш телефон*"
+                  required=""
+                  autocomplete="off"
+                />
+                <button type="submit" class="btn-main">
+                  Получить одобрение
+                </button>
+                <div class="intro__form-info">
+                  Нажимая на кнопку, вы даете согласие <br />на обработку своих
+                  персональных данных <br />и соглашаетесь с
+                  <a href="/politika.pdf" target="_blank">
+                    Политикой конфиденциальности
+                  </a>
+                </div>
+              </form>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="intro__form">
-          <img class="image-1" src="images/first-form-1.svg" />
-          <img class="image-2" src="images/first-form-2.svg" />
-          <img class="image-3" src="images/first-form-3.svg" />
-          <img class="image-4" src="images/first-form-4.svg" />
-
-          <div class="intro__form-content">
-            <div class="intro__form-title">
-              Оставьте заявку <br />и
-              <strong>получите одобрение уже через 30 минут</strong>
+      <!-- Calculator -->
+      <section class="calculator">
+        <div class="container">
+          <div class="calculator__form">
+            <div class="calculator__form-text">Сумма платежа составит:</div>
+            <div class="calculator__form-result"><span>5 900</span> руб.</div>
+            <div class="calculator__form-value-text">Ставка по кредиту</div>
+            <div class="calculator__form-value">от 5,9%</div>
+            <div class="calculator__form-text">
+              Укажите номер телефона и получите предварительное решение
+              <br />по вашему кредиту
             </div>
             <form action="" method="post">
-              <input
-                type="hidden"
-                name="title"
-                value="Заявка на одобрение через 30 минут"
-              />
-              <input
-                type="text"
-                name="name"
-                class="mask_text"
-                placeholder="Как вас зовут*"
-                required=""
-                autocomplete="off"
-              />
               <input
                 type="text"
                 name="phone"
                 class="mask_phone"
-                placeholder="Ваш телефон*"
+                placeholder="Телефон"
                 required=""
                 autocomplete="off"
               />
-              <button type="submit" class="btn-main">Получить одобрение</button>
-              <div class="intro__form-info">
-                Нажимая на кнопку, вы даете согласие <br />на обработку своих
-                персональных данных <br />и соглашаетесь с
+              <button type="submit" class="btn-main">
+                Узнать решение по кредиту
+              </button>
+              <div class="calculator__form-info">
+                Нажимая на кнопку, вы даете согласие <br />на
                 <a href="/politika.pdf" target="_blank">
-                  Политикой конфиденциальности
+                  обработку персональных данных
                 </a>
               </div>
             </form>
           </div>
+
+          <div class="calculator__content">
+            <div class="calculator__content-title">
+              Рассчитайте ежемесячный <br />платеж и
+              <strong>получите решение <br />в течение 30 минут</strong>
+            </div>
+
+            <div class="calculator__block">
+              <div class="calculator__block-container">
+                <div class="calculator__block_item-line">
+                  <span>Какая сумма вам нужна? (в рублях)</span>
+                  <input
+                    type="text"
+                    id="calc_sum"
+                    name=""
+                    placeholder="100 000"
+                    autocomplete="off"
+                  />
+                  <div class="slider-block">
+                    <div class="sliders" id="slider-money"></div>
+                  </div>
+                  <div class="calculator__block_item-line-text-left">
+                    300 тыс. руб.
+                  </div>
+                  <div class="calculator__block_item-line-text-right">
+                    500 млн. руб.
+                  </div>
+                </div>
+                <div class="calculator__block_item-line">
+                  <span>На сколько лет?</span>
+                  <input
+                    type="text"
+                    id="calc_years"
+                    value="5"
+                    name=""
+                    placeholder="5"
+                    autocomplete="off"
+                  />
+                  <div class="slider-block">
+                    <div class="sliders" id="slider-years"></div>
+                  </div>
+                  <div class="calculator__block_item-line-text-left">1</div>
+                  <div class="calculator__block_item-line-text-right">30</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <img
+            class="calculator__img"
+            src="images/calculator-block-image-1.png"
+          />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <div class="se"></div>
+      <div class="se"></div>
+    </main>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var textInputs = document.querySelectorAll(".mask_text");
-
-        textInputs.forEach(function (input) {
-          input.addEventListener("keydown", function (event) {
-            var k = event.key;
-            var allowedKeys = [
-              "а",
-              "б",
-              "в",
-              "г",
-              "д",
-              "е",
-              "ё",
-              "ж",
-              "з",
-              "и",
-              "й",
-              "к",
-              "л",
-              "м",
-              "н",
-              "о",
-              "п",
-              "р",
-              "с",
-              "т",
-              "у",
-              "ф",
-              "х",
-              "ц",
-              "ч",
-              "ш",
-              "щ",
-              "ъ",
-              "ы",
-              "ь",
-              "э",
-              "ю",
-              "я",
-
-              "А",
-              "Б",
-              "В",
-              "Г",
-              "Д",
-              "Е",
-              "Ё",
-              "Ж",
-              "З",
-              "И",
-              "Й",
-              "К",
-              "Л",
-              "М",
-              "Н",
-              "О",
-              "П",
-              "Р",
-              "С",
-              "Т",
-              "У",
-              "Ф",
-              "Х",
-              "Ц",
-              "Ч",
-              "Ш",
-              "Щ",
-              "Ъ",
-              "Ы",
-              "Ь",
-              "Э",
-              "Ю",
-              "Я",
-
-              "a",
-              "b",
-              "c",
-              "d",
-              "e",
-              "f",
-              "g",
-              "h",
-              "i",
-              "j",
-              "k",
-              "l",
-              "m",
-              "n",
-              "o",
-              "p",
-              "q",
-              "r",
-              "s",
-              "t",
-              "u",
-              "v",
-              "w",
-              "x",
-              "y",
-              "z",
-
-              "A",
-              "B",
-              "C",
-              "D",
-              "E",
-              "F",
-              "G",
-              "H",
-              "I",
-              "J",
-              "K",
-              "L",
-              "M",
-              "N",
-              "O",
-              "P",
-              "Q",
-              "R",
-              "S",
-              "T",
-              "U",
-              "V",
-              "W",
-              "X",
-              "Y",
-              "Z",
-
-              " ",
-              "Alt",
-              "Backspace",
-              "Shift",
-              "Control",
-              "Tab",
-              "ArrowLeft",
-              "ArrowRight",
-            ];
-
-            if (!allowedKeys.includes(k)) {
-              event.preventDefault();
-            }
-          });
-        });
-
-        [].forEach.call(
-          document.querySelectorAll(".mask_phone"),
-          function (input) {
-            var keyCode;
-            function mask(event) {
-              event.keyCode && (keyCode = event.keyCode);
-              var pos = this.selectionStart;
-              if (pos < 3) event.preventDefault();
-              var matrix = "+7 (___) ___ ____",
-                i = 0,
-                def = matrix.replace(/\D/g, ""),
-                val = this.value.replace(/\D/g, ""),
-                new_value = matrix.replace(/[_\d]/g, function (a) {
-                  return i < val.length ? val.charAt(i++) : a;
-                });
-              i = new_value.indexOf("_");
-              if (i != -1) {
-                i < 5 && (i = 3);
-                new_value = new_value.slice(0, i);
-              }
-              var reg = matrix
-                .substr(0, this.value.length)
-                .replace(/_+/g, function (a) {
-                  return "\\d{1," + a.length + "}";
-                })
-                .replace(/[+()]/g, "\\$&");
-              reg = new RegExp("^" + reg + "$");
-              if (
-                !reg.test(this.value) ||
-                this.value.length < 5 ||
-                (keyCode > 47 && keyCode < 58)
-              ) {
-                this.value = new_value;
-              }
-              if (event.type == "blur" && this.value.length < 5) {
-                this.value = "";
-              }
-            }
-
-            input.addEventListener("input", mask, false);
-            input.addEventListener("focus", mask, false);
-            input.addEventListener("blur", mask, false);
-            input.addEventListener("keydown", mask, false);
-          }
-        );
-      });
-
-      document
-        .querySelector("form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          var phoneInput = this.querySelector("input[name='phone']");
-          var phone = phoneInput.value;
-
-          if (String(phone)[4] != "9") {
-            phoneInput.value = "";
-            phoneInput.focus();
-            return;
-          }
-
-          var formData = new FormData(this);
-          var msg = new URLSearchParams(formData).toString();
-          var utmData = new FormData(document.getElementById("utm_form"));
-          var utm = new URLSearchParams(utmData).toString();
-
-          if (phone) {
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", "/lead.php", true);
-            xhr.setRequestHeader(
-              "Content-Type",
-              "application/x-www-form-urlencoded; charset=UTF-8"
-            );
-            xhr.onload = function () {
-              if (xhr.status === 200) {
-                var textInputs = document.querySelectorAll("input[type=text]");
-                var submitInputs = document.querySelectorAll(
-                  "form input[type=submit]"
-                );
-                var buttons = document.querySelectorAll("form button");
-                textInputs.forEach(function (input) {
-                  input.disabled = true;
-                });
-                submitInputs.forEach(function (input) {
-                  input.disabled = true;
-                });
-                buttons.forEach(function (button) {
-                  button.disabled = true;
-                });
-              } else {
-                console.log("Ошибка формы: " + xhr.status);
-              }
-            };
-            xhr.send(msg + "&" + utm);
-
-            var formInputs = this.querySelectorAll("input");
-            formInputs.forEach(function (input) {
-              input.disabled = true;
-            });
-          }
-        });
-    </script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
