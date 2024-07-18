@@ -332,3 +332,30 @@ document.getElementById("calc_years").addEventListener('change', function () {
 document.getElementById("calc_sum").addEventListener('change', calc());
 document.getElementById("calc_years").addEventListener('change', calc());
 
+
+const reviews = document.querySelector(".reviews");
+if (reviews) {
+  const items = reviews.querySelectorAll(".reviews__list .col-item");
+  const btn = reviews.querySelector(".btn-more");
+
+  btn.addEventListener("click", () => {
+    items.forEach((item) => {
+      item.classList.remove("hide");
+    })
+
+    btn.style.display = 'none'
+  });
+}
+
+let dataFancybox = [
+  "reviews",
+];
+dataFancybox.forEach((name) => {
+  Fancybox.bind(`[data-fancybox="${name}"]`, {
+    Images: {
+      Panzoom: {
+        maxScale: 3,
+      },
+    },
+  });
+});
