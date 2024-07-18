@@ -288,8 +288,8 @@ slider_years.noUiSlider.on("update", function (values, handle) {
 });
 
 function calc() {
-  var sum = document.getElementById('calc_sum').value.replace(/\s/g, '');
-  var srok = document.getElementById('calc_years').value;
+  var sum = parseFloat(document.getElementById('calc_sum').value.replace(/\s/g, ''));
+  var srok = parseFloat(document.getElementById('calc_years').value);
   var perc = 5.9;  // процент
   var term = srok * 12;  // срок в месяцах
 
