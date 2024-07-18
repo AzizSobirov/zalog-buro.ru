@@ -275,7 +275,6 @@ noUiSlider.create(slider_years, {
 
 slider_money.noUiSlider.on("update", function (values, handle) {
   sum = Math.round(values[handle]);
-  sum = sum.toLocaleString();
   document.getElementById("calc_sum").value = sum;
   calc();
 });
