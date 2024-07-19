@@ -247,8 +247,6 @@ document
     }
   });
 
-
-
 var slider_money = document.getElementById("slider-money");
 noUiSlider.create(slider_money, {
   start: 0,
@@ -345,6 +343,38 @@ if (reviews) {
     btn.style.display = 'none'
   });
 }
+
+// ** Accordions ** //
+const getAccordionParents = document.querySelectorAll("[data-accordion");
+getAccordionParents.forEach((parent) => {
+  const isMultiple = parent.dataset.multiple;
+  const accordions = parent.querySelectorAll(".accordion");
+  accordions.forEach((accordion) => {
+    const header = accordion.querySelector(".accordion__header");
+    const body = accordion.querySelector(".accordion__body");
+    const content = accordion.querySelector(".accordion__content");
+
+    header.addEventListener("click", () => {
+      const isActive = accordion.classList.contains("active");
+      if (!isActive) {
+        accordion.classList.add("active");
+        body.style.maxHeight = content.scrollHeight + "px";
+      } else {
+        accordion.classList.remove("active");
+        body.style.maxHeight = 0;
+      }
+
+      if (!isMultiple || isMultiple == "false") {
+        accordions.forEach((el) => {
+          if (el !== accordion) {
+            el.classList.remove("active");
+            el.querySelector(".accordion__body").style.maxHeight = 0;
+          }
+        });
+      }
+    });
+  });
+});
 
 let dataFancybox = [
   "reviews",
