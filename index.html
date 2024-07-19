@@ -121,7 +121,7 @@
       </section>
 
       <!-- Calculator -->
-      <section class="calculator">
+      <section class="calculator" id="calculator">
         <div class="container">
           <div class="calculator__form">
             <div class="calculator__form-result-text">
@@ -433,7 +433,7 @@
       </section>
 
       <!-- Reviews -->
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <h3 class="reviews__title">
             Уже
@@ -452,7 +452,7 @@
                   />
                 </div>
                 <a
-                  data-fancybox="reviews"
+                  data-fancybox="reviews-list"
                   href="https://www.youtube.com/watch?v=kriacLZTO9Q"
                   class="reviews__item-play"
                 ></a>
@@ -468,7 +468,7 @@
                   />
                 </div>
                 <a
-                  data-fancybox="reviews"
+                  data-fancybox="reviews-list"
                   href="https://www.youtube.com/watch?v=euxgYqXZjFM"
                   class="reviews__item-play"
                 ></a>
@@ -484,7 +484,7 @@
                   />
                 </div>
                 <a
-                  data-fancybox="reviews"
+                  data-fancybox="reviews-list"
                   href="https://www.youtube.com/watch?v=d9P6x3GAWOk"
                   class="reviews__item-play"
                 ></a>
@@ -500,7 +500,7 @@
                   />
                 </div>
                 <a
-                  data-fancybox="reviews"
+                  data-fancybox="reviews-list"
                   href="https://www.youtube.com/watch?v=HpGu1j5F-LY"
                   class="reviews__item-play"
                 ></a>
@@ -516,7 +516,7 @@
                   />
                 </div>
                 <a
-                  data-fancybox="reviews"
+                  data-fancybox="reviews-list"
                   href="https://www.youtube.com/watch?v=LHdTe3YoPC4"
                   class="reviews__item-play"
                 ></a>
@@ -532,7 +532,7 @@
                   />
                 </div>
                 <a
-                  data-fancybox="reviews"
+                  data-fancybox="reviews-list"
                   href="https://www.youtube.com/watch?v=o2z1hqf9-bk"
                   class="reviews__item-play"
                 ></a>
@@ -548,7 +548,7 @@
                   />
                 </div>
                 <a
-                  data-fancybox="reviews"
+                  data-fancybox="reviews-list"
                   href="https://www.youtube.com/watch?v=h5Sy9GDAVwc"
                   class="reviews__item-play"
                 ></a>
@@ -769,7 +769,7 @@
       </section>
 
       <!-- Faq -->
-      <section class="faq">
+      <section class="faq" id="faq">
         <div class="container">
           <h3 class="faq__title">
             Ответы на <strong><span>часто-задаваемые</span> вопросы</strong>
@@ -929,7 +929,7 @@
       </section>
 
       <!-- Contacts -->
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts__block">
             <div class="contacts__title">
@@ -1031,6 +1031,80 @@
         </div>
       </div>
     </footer>
+
+    <!-- Popup -->
+    <div class="popup">
+      <div class="popup__bg" onclick="closePopup()"></div>
+      <div class="popup__content">
+        <div class="popup__close" onclick="closePopup()">
+          <img src="images/icon-close.svg" alt="" />
+        </div>
+        <div class="popup__form" id="popup-form">
+          <form action="" method="post">
+            <div class="popup__form-title">Обратный звонок</div>
+            <div class="popup__form-description">
+              Остались вопросы и сомнения? <br />Мы перезвоним в течение 1
+              минуты <br />и ответим на все вопросы <br />по Вашей ситуации.
+            </div>
+            <input
+              type="text"
+              name="name"
+              class="mask_text"
+              placeholder="Имя*"
+              required=""
+              autocomplete="off"
+            />
+            <input
+              type="text"
+              name="phone"
+              class="mask_phone"
+              placeholder="Телефон*"
+              required=""
+              autocomplete="off"
+            />
+            <button class="btn-main">ПЕРЕЗВОНИТЬ МНЕ</button>
+            <div class="popup__form-info">
+              Нажимая кнопку "ПЕРЕЗВОНИТЬ МНЕ", вы соглашаетесь <br />
+              <a href="/politika.pdf" target="_blank">
+                с политикой обработки персональных данных
+              </a>
+            </div>
+          </form>
+        </div>
+        <div class="popup__form" id="popup-success">
+          <div class="popup__form-title">Заявка принята</div>
+          <div class="popup__form-description">
+            В ближайшее время с вами <br />свяжется наш специалист!
+          </div>
+          <div class="popup__form-success">
+            <p>
+              Уважаемые клиенты, обратите внимание, что в последнее время
+              участились случаи мошенничества!
+            </p>
+            <p>
+              Злоумышленники могут звонить и обращаться к вам от лица
+              государственных структур - «Следственный Комитет», «Госуслуги»,
+              «Центробанк» и так далее, склоняя к получению кредита и отправки
+              денежных средств на «безопасные счета» (также под любым другим
+              предлогом).
+            </p>
+            <p>
+              В случае, если вам поступали подобные звонки, обязательно сообщите
+              менеджеру об этом и мы поможем вам во всём разобраться, чтобы вы
+              не потеряли свои сбережения и недвижимость!
+            </p>
+          </div>
+          <button class="btn-main" onclick="closePopup()">Жду звонка</button>
+        </div>
+        <div class="popup__form" id="popup-error">
+          <div class="popup__form-title">Ошибка</div>
+          <div class="popup__form-description">
+            Введите корректный номер телефона
+          </div>
+          <button class="btn-main" onclick="closePopup()">Исправить</button>
+        </div>
+      </div>
+    </div>
 
     <script src="js/fancybox.min.js"></script>
     <script src="js/nouislider.min.js"></script>
