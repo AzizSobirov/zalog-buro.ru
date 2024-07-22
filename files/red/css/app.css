@@ -617,7 +617,6 @@ main {
   .header__logo img {
     margin-top: -2px;
     margin-left: -2px;
-    width: 29px;
     height: 29px;
   }
   .header__logo .flex-col {
@@ -3320,7 +3319,7 @@ main {
 }
 .footer__logo img {
   width: auto;
-  height: 44px;
+  height: 40px;
   filter: invert(1);
 }
 .footer__logo .flex-col {
@@ -3345,10 +3344,6 @@ main {
     align-items: center;
     text-align: center;
     gap: 10px;
-  }
-  .footer__logo img {
-    width: 48px;
-    height: 48px;
   }
   .footer__logo .flex-col {
     align-items: center;
